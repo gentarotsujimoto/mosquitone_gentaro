@@ -2,30 +2,42 @@
     <head>
         <meta charset="UTF-8">
         <title>Set illustration</title>
-
     </head>
     
      <body>
-           <h1><font size="10" style="color:purple"> <div >mosquitone</div></font></h1>
-           <p1><font size="5" style="color:grey">< Create a set illustration ></Create></font>></p1>
+           <h1><font size="10" style="color:orange"> <div1 >mosquitone</div1></font></h1>
+           <p1><font size="5" style="color:grey">< Create a set illustration ></font>></p1>
            <br>
            <br>
-           <p2 onclick=clickdate() 
-           style="color:white">$ Event Name</p2><br>
+                <table border="1" >
+                        <tr>
+                                <td td bgcolor="orange">$EVENT NAME</td>
+                        <tr>    
+           <br>
            <table border="1" style="color: white;">
            <tr>
                 <td>Date</td>
                 <td>
                         <input id="datedata" type="date">
             <tr>
+                <td>Place</td>
+                <td>
+                        <input id="datedata" type="text">
+            <tr>
                 <td>Event Name</td>
                 <td>
                         <input id="evntname" type="text">
             </table>
-           <div style="color: white;">$BandName</div>
-           <input id="bandname" type="text"><br>
+            <br>
+            <table border="1" >
+                    <tr>
+                            <td td bgcolor="orange">$BAND NAME</td>
+                            <td>
+                                    <input id="datedata" type="text">
+                    <tr>
+                        </table>    
            <p3 onclick=clickmember() 
-           style="color: white">$ Members</p3><br>
+           style="color:orange">$ Members</p3><br>
            <table border = "1"><tbody >
            <tr><th style="color: white;">Name</th><th style="color: white;">Part</th><th style="color: white;">Address</th></tr>
             <td><input name="N1" type="text" ></td>
@@ -209,10 +221,9 @@
             </select></td>
            <td><input name="A10" type="text" ></td></tr>
            </tbody></table>
-           <br>
-           <p5 style="color: white">$ Drum Setting</p5><br>
+           <p5 style="color:orange">$ Drum Setting</p5><br>
            <table border="1" style="color: white;">
-            <a style="color: white">Defult Setting</a>
+            <a style="color:white">1.Defult Setting</a>
             <tr>
             <td>Snare</td>
             <td>
@@ -287,6 +298,21 @@
                         <option>None</option>
                 </tr>
                 </table>
+           <a style="color: white;">2.Pluse Setting</a>
+           <table border="1" style="color: white;">
+           <tr>
+            <td>China</td>
+            <td>
+                <select name="D1">
+                    <option>None</option>
+                    <option>Bring in</option>
+            <td>Splash</td>
+            <td>
+                <select name="D2">
+                    <option>None</option>
+                    <option>Bring in</option>
+                    <tr>
+                    </table>
            <p5 style="color: white">$ Bass Setting</p5><br>
            <p6 onclick=clicksynthe()
            style="color: white">$ Synthesizer Setting</p6><br>

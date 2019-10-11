@@ -11,7 +11,7 @@
            <br>
                 <table border="1" >
                         <tr>
-                                <td td bgcolor="orange">$EVENT NAME</td>
+                                <td td bgcolor="orange">EVENT NAME</td>
                         <tr>    
            <br>
            <table border="1" style="color: white;">
@@ -31,13 +31,17 @@
             <br>
             <table border="1" >
                     <tr>
-                            <td td bgcolor="orange">$BAND NAME</td>
+                            <td td bgcolor="orange">BAND NAME</td>
                             <td>
                                     <input id="datedata" type="text">
                     <tr>
                         </table>    
-           <p3 onclick=clickmember() 
-           style="color:orange">$ Members</p3><br>
+                        <br>
+            <table border="1" >
+                    <tr>
+                            <td td bgcolor="orange">MEMBER</td>
+                            
+                    <tr>
            <table border = "1"><tbody >
            <tr><th style="color: white;">Name</th><th style="color: white;">Part</th><th style="color: white;">Address</th></tr>
             <td><input name="N1" type="text" ></td>
@@ -221,9 +225,13 @@
             </select></td>
            <td><input name="A10" type="text" ></td></tr>
            </tbody></table>
-           <p5 style="color:orange">$ Drum Setting</p5><br>
+           <br>
+           <table border="1" >
+            <tr>
+                    <td td bgcolor="orange">Drum Setting</td>
+                    
+            <tr>
            <table border="1" style="color: white;">
-            <a style="color:white">1.Defult Setting</a>
             <tr>
             <td>Snare</td>
             <td>
@@ -298,7 +306,7 @@
                         <option>None</option>
                 </tr>
                 </table>
-           <a style="color: white;">2.Pluse Setting</a>
+                <br>
            <table border="1" style="color: white;">
            <tr>
             <td>China</td>
@@ -312,16 +320,93 @@
                     <option>None</option>
                     <option>Bring in</option>
                     <tr>
-                    </table>
-           <p5 style="color: white">$ Bass Setting</p5><br>
-           <p6 onclick=clicksynthe()
-           style="color: white">$ Synthesizer Setting</p6><br>
-           <p7 onclick=clickgt1()
-           style="color: white">$ Guitar1 Setting</p7><br>
-           <p8 onclick=clickgt2()
-           style="color: white">$ Guitar2 Setting</p8><br>
-           <p9 onclick=clickother()
-           style="color: white">$ Other </p9><br>
+            </table>
+            <br>
+            <table border="1" >
+                    <tr>
+                        <td td bgcolor="orange">Bass Setting</td>        
+                    </tr>
+                            <table border="1" style="color: white;">
+                                    <tr>
+                                     <td>Head</td>
+                                     <td>
+                                         <input name="B1" type="text" >
+                                    </td>
+                                    </tr>
+                                     <td>Cabi</td>
+                                     <td>
+                                         <input name="B1" type="text" >
+                                             <tr>
+                                     </table>
+            </table>
+            <br>
+        </table>
+        <table border="1" >
+                <tr>
+                    <td td bgcolor="orange">Synthesizer Setting</td>        
+                </tr>
+                        <table border="1" style="color: white;">
+                                <tr>
+                                 <td>Name</td>
+                                 <td>
+                                     <input name="Synth1" type="text" >
+                                </td>
+                                </tr>
+                                 </table>
+        </table>
+        <br>
+
+        <table border="1" >
+                 <tr>
+                   <td td bgcolor="orange">Guitar1 Setting</td>        
+                 </tr>
+                 <table border="1" style="color: white;">
+                        <tr>
+                         <td>Head</td>
+                         <td>
+                             <input name="Gt11" type="text" >
+                        </td>
+                        </tr>
+                         <td>Cabi</td>
+                         <td>
+                             <input name="Gt12" type="text" >
+                                 <tr>
+                         </table>
+        </table>
+        <br>
+
+        <table border="1" >
+                <tr>
+                  <td td bgcolor="orange">Guitar2 Setting</td>        
+                </tr>
+                <table border="1" style="color: white;">
+                        <tr>
+                         <td>Head</td>
+                         <td>
+                             <input name="Gt21" type="text" >
+                        </td>
+                        </tr>
+                         <td>Cabi</td>
+                         <td>
+                             <input name="Gt22" type="text" >
+                             </td>
+                         </table>
+       </table>
+       <br>
+
+       <table border="1" >
+            <tr>
+              <td td bgcolor="orange">other Setting</td>        
+            </tr>
+            <table border="1" style="color: white;">
+            <td>Pluse Set</td>
+            <td>
+                <input name="PS" type="text" >
+                </td>
+            </table>
+   </table>
+   <br>
+   <button type="button" >SET</button>
            
 <script>
 //背景色変更

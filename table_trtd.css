@@ -1,0 +1,8 @@
+.OutputTable td {
+    border-color: black;
+    padding: 5px 10px;
+    text-align: left;
+}
+.OutputTable th {
+    background-color: #FFFFFF;
+}

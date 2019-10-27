@@ -49,7 +49,7 @@ ul {
     background: black;
   }
   .sheet {
-    background: white; /* 背景を白く */
+    background: #EEE8AA; /* 背景を白く */
     box-shadow: 0 0.5mm 2mm rgba(0, 0, 0, 0.3); /* ドロップシャドウ */
     margin: 5mm auto;
   }
@@ -70,7 +70,6 @@ ul {
 }
 
 /* 大枠の指定 */
-
 div.row_1 {
   height: 14mm;
 }
@@ -100,71 +99,56 @@ div.row_5 {
 div.row_6 {
   height: 18mm;
 }
-
+/*図形入力用の枠*/
+.square {
+    width: 585px;
+    height: 400px;
+    background: #EEE8AA;
+    border: solid;
+ }
 /* 個別のスタイル指定 */
 
 /* バンド名　*/
 h1 {
-max-width: 400px;
-border-bottom: solid 1px;
-font-size: 20px;
+border-bottom: solid 1px; 
+max-width: 300px;
 }
 
+/* 場所出力　*/
+/*h3{
+
+}*/
+
 /* タイトル */
-h3 {
+h4 {
   font-size: 30px;
   border: solid;
 }
 
-/* 顧客名・自社名 */
-h4 {
-  font-size: 20px;
-  font-weight: normal;
-}
-
-/* 顧客名 */
-h4.customer_name {
-  text-decoration: underline;
-}
-
-img.stamp{
-  position: absolute;
-  z-index: 1;
-  top: 10mm;
-  left: 48mm;
-  height: 17mm;
-  width: 17mm;
+/*バンド名出力*/
+a1 {
+  font-size: 25px;
+  white-space:nowrap;
 }
 
 /* テーブル共通 */
 table,
 th,
 td {
-  border: 1px #264d99 solid;
+  border: 2px solid;
   border-collapse: collapse;
   padding: 1px 5px;
 }
 
 table th {
-  background: #3366cc;
+  background:#EEE8AA;
   font-weight: normal;
-  color: #ffffff;
 }
 table td {
   text-align: right;
 }
 
-/* テーブル 総額欄 */
-table.summary th {
-  font-size: 14pt;
-  width: 32mm;
-}
-table.summary td {
-  font-size: 14pt;
-  width: 40mm;
-}
-
-/* テーブル 明細欄 */
+/* テーブル メンバー */
 table.detail {
   width: 100%;
 }
@@ -172,25 +156,16 @@ table.detail tr {
   height: 6mm;
 }
 table.detail th.item {
-  width: 50%;
+  width: 40%;
 }
 table.detail th.unit_price {
-  width: 18%;
+  width: 15%;
 }
 table.detail th.amount {
-  width: 14%;
-}
-table.detail th.subtotal {
-  width: 18%;
+  width: 45%;
 }
 
 table.detail td.space {
   border-left-style: hidden;
   border-bottom-style: hidden;
-}
-table.detail tr.dataline:nth-child(odd) td {
-  background-color: #ccddff;
-}
-table.detail tr.dataline:nth-child(even) td {
-  background-color: #ffffff;
 }

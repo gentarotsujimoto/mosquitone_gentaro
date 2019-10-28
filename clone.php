@@ -40,54 +40,54 @@
                 </thead>
                 <tbody>
                     <tr class="dataline">
-                        <td class="text-center"><?php print("".$_POST["membername[1]"]);?></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
+                        <td class="text-center"><?php print($_POST["N1"]);?></td>
+                        <td class="text-center"><?php print($_POST["P1"]);?></td>
+                        <td class="text-center"><?php print($_POST["A1"]);?></td>
                     </tr>
                     <tr class="dataline">
-                        <td class="text-center"><?php print("".$_POST["membername[2]"]);?></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
+                        <td class="text-center"><?php print($_POST["N2"]);?></td>
+                        <td class="text-center"><?php print($_POST["P2"]);?></td>
+                        <td class="text-center"><?php print($_POST["A2"]);?></td>
                     </tr>
                     <tr class="dataline">
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
+                        <td class="text-center"><?php print($_POST["N3"]);?></td>
+                        <td class="text-center"><?php print($_POST["P3"]);?></td>
+                        <td class="text-center"><?php print($_POST["A3"]);?></td>
                     </tr>
                     <tr class="dataline">
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
+                        <td class="text-center"><?php print($_POST["N4"]);?></td>
+                        <td class="text-center"><?php print($_POST["P4"]);?></td>
+                        <td class="text-center"><?php print($_POST["A4"]);?></td>
                     </tr>
                     <tr class="dataline">
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
+                        <td class="text-center"><?php print($_POST["N5"]);?></td>
+                        <td class="text-center"><?php print($_POST["P5"]);?></td>
+                        <td class="text-center"><?php print($_POST["A5"]);?></td>
                     </tr>
                     <tr class="dataline">
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
+                        <td class="text-center"><?php print($_POST["N6"]);?></td>
+                        <td class="text-center"><?php print($_POST["P6"]);?></td>
+                        <td class="text-center"><?php print($_POST["A6"]);?></td>
                     </tr>
                     <tr class="dataline">
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
+                        <td class="text-center"><?php print($_POST["N7"]);?></td>
+                        <td class="text-center"><?php print($_POST["P7"]);?></td>
+                        <td class="text-center"><?php print($_POST["A7"]);?></td>
                     </tr>
                     <tr class="dataline">
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
+                        <td class="text-center"><?php print($_POST["N8"]);?></td>
+                        <td class="text-center"><?php print($_POST["P8"]);?></td>
+                        <td class="text-center"><?php print($_POST["A8"]);?></td>
                     </tr>
                     <tr class="dataline">
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
+                        <td class="text-center"><?php print($_POST["N9"]);?></td>
+                        <td class="text-center"><?php print($_POST["P9"]);?></td>
+                        <td class="text-center"><?php print($_POST["A9"]);?></td>
                     </tr>
                     <tr class="dataline">
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
+                        <td class="text-center"><?php print($_POST["N10"]);?></td>
+                        <td class="text-center"><?php print($_POST["P10"]);?></td>
+                        <td class="text-center"><?php print($_POST["A10"]);?></td>
                     </tr>
                     </tbody>
             </table>

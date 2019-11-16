@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="sheet.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="sheet1.css">
+    <title>Set Illustration</title>
 </head>
 <body>
     <section class="sheet">
@@ -25,7 +25,42 @@
         </div>
         <br>
         <h5>Set Set Illustration:</h5>
-        <div class="square"></div>
+        <div class="square">
+            <canvas>Not　Canvas</canvas>
+        <?php
+        //ドラムセッティング
+            $D1 =$_POST['D1'];
+            $D2 =$_POST['D2'];
+            $D3 =$_POST['D3'];
+            $D4 =$_POST['D4'];
+            $K1 =$_POST['K1'];
+            $K2 =$_POST['K2'];
+            $K3 =$_POST['K3'];
+            $K4 =$_POST['K4'];
+            $B1 =$_POST['B1'];
+            $D5 =$_POST['D5'];
+            $D11 =$_POST['D11'];
+            $D12 =$_POST['D12'];
+            echo '<input type="hidden" id="D1" value="'.$D1.'">';
+            echo '<input type="hidden" id="D2" value="'.$D2.'">';
+            echo '<input type="hidden" id="D3" value="'.$D3.'">';
+            echo '<input type="hidden" id="D4" value="'.$D4.'">';
+            echo '<input type="hidden" id="K1" value="'.$K1.'">';
+            echo '<input type="hidden" id="K2" value="'.$K2.'">';
+            echo '<input type="hidden" id="K3" value="'.$K3.'">';
+            echo '<input type="hidden" id="K4" value="'.$K4.'">';
+            echo '<input type="hidden" id="B1" value="'.$B1.'">';
+            echo '<input type="hidden" id="D5" value="'.$D5.'">';
+            echo '<input type="hidden" id="D11" value="'.$D11.'">';
+            echo '<input type="hidden" id="D12" value="'.$D12.'">';
+        
+        //ベースセッティング
+
+        ?>
+        
+        <script src="DBGV.js">
+        </script>
+        </div>
         
     <br>
         <h6>Member:</h6>

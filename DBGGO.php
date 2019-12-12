@@ -107,7 +107,7 @@
                  <select name="D5">
                  <option>持ち込みなし</option>
                  <option>持ち込み</option>
-                 <option>不要</option>ion>
+                 <option>不要</option>
                  </select>
               </td>
              </tr>
@@ -192,11 +192,12 @@
                      <tr>
                       <td>Cabi Combo</td>
                       <td>
-                      <select name="Gt01">
-                              <option>持ち込みなし</option>
-                        　    <option>持ち込み</option>
-                        　　　<option>不要</option>
-                         </select>
+                      <select name="Gt01"> 
+                              <option>持ち込みなし(Cabi)</option>
+			　    <option>持ち込み(Cabi)</option>
+                              <option>持ち込みなし(Combo)</option>
+                        　    <option>持ち込み(Combo)</option>
+                        　　　<option>不要</option>                         </select>
                           <input name="Gt12" type="text" value="Marshall">
                       </td>
                       </tr>
@@ -209,10 +210,10 @@
                      <tr>
                       <td>Head</td>
                       <td>
-                      <select name="Gt02">
+		      <select name="Gt02">
                               <option>持ち込みなし</option>
                         　    <option>持ち込み</option>
-                       　　　 <option>不要</option>
+                        　　　<option>不要</option>
                          </select>
                           <input name="Gt21" type="text" value="Jazz Chorus">
                      </td>
@@ -221,8 +222,10 @@
                       <td>Cabi Combo</td>
                       <td>
                       <select name="Gt03">
-                              <option>持ち込みなし</option>
-                        　    <option>持ち込み</option>
+                              <option>持ち込みなし(Cabi)</option>
+			　    <option>持ち込み(Cabi)</option>
+                              <option>持ち込みなし(Combo)</option>
+                        　    <option>持ち込み(Combo)</option>
                         　　　<option>不要</option>
                          </select>
                           <input name="Gt22" type="text" value="Jazz Chorus">

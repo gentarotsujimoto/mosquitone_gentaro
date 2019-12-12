@@ -327,14 +327,35 @@ console.log("Base Cabi,Combo Name:"+Ba2);
           ctx. textAlign = "center"
         }
 //ヘッド　名前入力、空欄の場合はHead
-        if (Ba01 == null) {
+        if (Ba1 == null) {
           ctx.strokeText("Head",70,160 );
         }else{
           ctx.strokeText(Ba1,95,170);
         }
 
-//ヘッド　持ち込みなし・持ち込み・不要
-
+//キャビネット　持ち込みなし・持ち込み・不要
+         if (Ba02 == "持ち込みなし") {
+          ctx.beginPath();
+          ctx.strokeStyle="black";
+          ctx.strokeRect(70,180,60,40);
+          ctx.fillStyle = "white" ;
+          ctx.fill();
+          ctx.stroke();
+        }else if(Ba02 == "持ち込み") {
+          ctx.beginPath();
+          ctx.strokeStyle="red";
+          ctx.strokeRect(70,180,60,40);
+          ctx.fillStyle = "white" ;
+          ctx.fill() ;
+          ctx.stroke();
+          ctx. textAlign = "center"
+        }
+//キャビネット　名前入力、空欄の場合はHead
+        if (Ba2 == null) {
+          ctx.strokeText("Head",95,200);
+        }else{
+          ctx.strokeText(Ba2,95,200);
+        }
 
 //////////////////////////////////////////////////////
 //              ギター１セッティング                 //
@@ -352,6 +373,75 @@ console.log("Guitar1 Cabi,Combo Name:"+Gt12);
 //持ち込み(else if)
 //不要の場合処理なし
 
+//ヘッド　持ち込みなし・持ち込み・不要
+	  //SWICH文使用
+         if (Gt00 == "持ち込みなし") {
+          ctx.beginPath();
+          ctx.strokeStyle="black";
+          ctx.strokeRect(460,160,60,20);
+          ctx.fillStyle = "white" ;
+          ctx.fill();
+          ctx.stroke();
+        }else if(Gt00 == "持ち込み") {
+          ctx.beginPath();
+          ctx.strokeStyle="red";
+          ctx.strokeRect(460,160,60,20);
+          ctx.fillStyle = "white" ;
+          ctx.fill() ;
+          ctx.stroke();
+          ctx. textAlign = "center"
+        }else if( Gt01 == "持ち込みなし(Combo)" || Gt01 == "持ち込み(Combo)") {
+	  console.log("Guitar1 Head:"+なし);
+          console.log("Guitar1 Head Name:"+なし);
+        }
+//ヘッド　名前入力、空欄の場合はHead
+        if (Gt11 == null) {
+          ctx.strokeText("Head",483,170);
+        }else if(Gt11 == null && Gt01 == "持ち込みなし(Combo)") {
+          ctx.strokeText("",483,170); 
+        }else if(Gt11 == null && Gt01 == "持ち込み(Combo)") {
+          ctx.strokeText("",483,170);
+	}else{
+          ctx.strokeText(Gt11,483,170);
+        }
+
+//キャビネット　持ち込みなし・持ち込み・不要
+         if (Gt01 == "持ち込みなし(Cabi)") {
+          ctx.beginPath();
+          ctx.strokeStyle="black";
+          ctx.strokeRect(460,180,60,40);         
+	  ctx.fill();
+          ctx.stroke();
+        }else if(Gt01 == "持ち込み(Cabi)") {
+          ctx.beginPath();
+          ctx.strokeStyle="red";
+          ctx.strokeRect(460,180,60,40);
+          ctx.fillStyle = "white" ;
+          ctx.fill() ;
+          ctx.stroke();
+          ctx. textAlign = "center"
+        } else if (Gt01 == "持ち込みなし(Combo)") {
+          ctx.beginPath();
+          ctx.strokeStyle="black";
+          ctx.strokeRect(460,180,60,40);         
+	  ctx.fill();
+          ctx.stroke();
+        }else if(Gt01 == "持ち込み(Combo)") {
+          ctx.beginPath();
+          ctx.strokeStyle="red";
+          ctx.strokeRect(460,180,60,40);
+          ctx.fillStyle = "white" ;
+          ctx.fill() ;
+          ctx.stroke();
+          ctx. textAlign = "center"
+        }
+//キャビネット　名前入力、空欄の場合はHead
+        if (Gt12 == null) {
+          ctx.strokeText("Head",483,200);
+        }else{
+          ctx.strokeText(Gt12,483,200);
+        }
+	
 //////////////////////////////////////////////////////
 //              ギター２セッティング                 //
 //////////////////////////////////////////////////////

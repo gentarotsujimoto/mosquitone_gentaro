@@ -28,9 +28,7 @@
         <div class="square">
             <canvas>Not　Canvas</canvas>
         <?php require('./POST_data.php');?>
-        
-        <script src="DBGV.js">
-        </script>
+        <script src="DBGV.js"></script>
         </div>
         
     <br>

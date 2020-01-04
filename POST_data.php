@@ -63,7 +63,7 @@ echo '<input type="hidden" name="N8" value="'.$N8.'">';
 echo '<input type="hidden" name="P8" value="'.$P8.'">';
 echo '<input type="hidden" name="A8" value="'.$A8.'">';
 echo '<input type="hidden" name="N9" value="'.$N9.'">';
-echo '<input type="hidden" name="P9" value="'.$P8.'">';
+echo '<input type="hidden" name="P9" value="'.$P9.'">';
 echo '<input type="hidden" name="A9" value="'.$A9.'">';
 echo '<input type="hidden" name="N10" value="'.$N10.'">';
 echo '<input type="hidden" name="P10" value="'.$P10.'">';

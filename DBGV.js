@@ -9,8 +9,9 @@
       return;
     }
     const ctx = canvas.getContext('2d');
+
 //ctx.fillRect(x, y, width, height);
-//DBGGO.phpのGET処理はここから
+//DBGGO.phpのPOST処理はここから
 
 //////////////////////////////////////////////////////
 //              ドラムセッティング                   //
@@ -364,8 +365,6 @@ let Gt00 = document.getElementById('Gt00').value;
 let Gt11 = document.getElementById('Gt11').value;
 let Gt01 = document.getElementById('Gt01').value;
 let Gt12 = document.getElementById('Gt12').value;
-console.log("Guitar1 Head:"+Gt00);
-console.log("Guitar1 Head Name:"+Gt11);
 console.log("Guitar1 Cabi,Combo:"+Gt01);
 console.log("Guitar1 Cabi,Combo Name:"+Gt12);
 //ギター１（処理開始）
@@ -374,35 +373,38 @@ console.log("Guitar1 Cabi,Combo Name:"+Gt12);
 //不要の場合処理なし
 
 //ヘッド　持ち込みなし・持ち込み・不要
-	  //SWICH文使用
-         if (Gt00 == "持ち込みなし") {
+        if( Gt01 == "持ち込みなし(Combo)" || Gt01 == "持ち込み(Combo)") {
+	        console.log("Guitar1 Head:"+"なし");
+          console.log("Guitar1 Head Name:"+ "なし");
+        }else if (Gt00 == "持ち込みなし") {
           ctx.beginPath();
           ctx.strokeStyle="black";
           ctx.strokeRect(460,160,60,20);
           ctx.fillStyle = "white" ;
           ctx.fill();
           ctx.stroke();
+          console.log("Guitar1 Head:"+Gt00);
         }else if(Gt00 == "持ち込み") {
           ctx.beginPath();
           ctx.strokeStyle="red";
           ctx.strokeRect(460,160,60,20);
           ctx.fillStyle = "white" ;
-          ctx.fill() ;
+          ctx.fill() ; 
           ctx.stroke();
           ctx. textAlign = "center"
-        }else if( Gt01 == "持ち込みなし(Combo)" || Gt01 == "持ち込み(Combo)") {
-	  console.log("Guitar1 Head:"+なし);
-          console.log("Guitar1 Head Name:"+なし);
+          console.log("Guitar1 Head:"+Gt00);
         }
 //ヘッド　名前入力、空欄の場合はHead
-        if (Gt11 == null) {
+        if(Gt01 == "持ち込みなし(Combo)") {
+          console.log("Guitar1 Head Name:"+"なし");
+        }else if(Gt01 == "持ち込み(Combo)") {
+          console.log("Guitar1 Head Name:"+"なし");
+	      }else if (Gt11 == "") {
           ctx.strokeText("Head",483,170);
-        }else if(Gt11 == null && Gt01 == "持ち込みなし(Combo)") {
-          ctx.strokeText("",483,170); 
-        }else if(Gt11 == null && Gt01 == "持ち込み(Combo)") {
-          ctx.strokeText("",483,170);
-	}else{
+          console.log("Guitar1 Head Name:"+"Head");
+        }else {
           ctx.strokeText(Gt11,483,170);
+          console.log("Guitar1 Head Name:"+Gt11);
         }
 
 //キャビネット　持ち込みなし・持ち込み・不要
@@ -410,7 +412,7 @@ console.log("Guitar1 Cabi,Combo Name:"+Gt12);
           ctx.beginPath();
           ctx.strokeStyle="black";
           ctx.strokeRect(460,180,60,40);         
-	  ctx.fill();
+	        ctx.fill();
           ctx.stroke();
         }else if(Gt01 == "持ち込み(Cabi)") {
           ctx.beginPath();
@@ -420,11 +422,11 @@ console.log("Guitar1 Cabi,Combo Name:"+Gt12);
           ctx.fill() ;
           ctx.stroke();
           ctx. textAlign = "center"
-        } else if (Gt01 == "持ち込みなし(Combo)") {
+        }else if (Gt01 == "持ち込みなし(Combo)") {
           ctx.beginPath();
           ctx.strokeStyle="black";
           ctx.strokeRect(460,180,60,40);         
-	  ctx.fill();
+	        ctx.fill();
           ctx.stroke();
         }else if(Gt01 == "持ち込み(Combo)") {
           ctx.beginPath();
@@ -437,7 +439,7 @@ console.log("Guitar1 Cabi,Combo Name:"+Gt12);
         }
 //キャビネット　名前入力、空欄の場合はHead
         if (Gt12 == null) {
-          ctx.strokeText("Head",483,200);
+          ctx.strokeText("Cabi",483,200);
         }else{
           ctx.strokeText(Gt12,483,200);
         }
@@ -459,6 +461,142 @@ console.log("Guitar2 Cabi,Combo Name:"+Gt22);
 //持ち込み(else if)
 //不要の場合処理なし
 
-  }
+//ヘッド　持ち込みなし・持ち込み・不要
+          if(Gt03 == "持ち込みなし(Combo)" || Gt03 == "持ち込み(Combo)") {
+            console.log("Guitar1 Head:"+"なし");
+            console.log("Guitar1 Head Name:"+ "なし");
+          }else if (Gt02 == "持ち込みなし") {
+            ctx.beginPath();
+            ctx.strokeStyle="black";
+            ctx.strokeRect(200,160,60,20);
+            ctx.fillStyle = "white" ;
+            ctx.fill();
+            ctx.stroke();
+            console.log("Guitar1 Head:"+Gt02);
+          }else if(Gt02 == "持ち込み") {
+            ctx.beginPath();
+            ctx.strokeStyle="red";
+            ctx.strokeRect(200,160,60,20);
+            ctx.fillStyle = "white" ;
+            ctx.fill() ; 
+            ctx.stroke();
+            ctx. textAlign = "center"
+            console.log("Guitar1 Head:"+Gt02);
+          }
+          //ヘッド　名前入力、空欄の場合はHead
+          if(Gt03 == "持ち込みなし(Combo)") {
+            console.log("Guitar1 Head Name:"+"なし");
+          }else if(Gt03 == "持ち込み(Combo)") {
+            console.log("Guitar1 Head Name:"+"なし");
+          }else if (Gt21 == "") {
+            ctx.strokeText("Head",223,170);
+            console.log("Guitar1 Head Name:"+"Head");
+          }else {
+            ctx.strokeText(Gt21,223,170);
+            console.log("Guitar1 Head Name:"+Gt21);
+          }
+
+          //キャビネット　持ち込みなし・持ち込み・不要
+          if (Gt03 == "持ち込みなし(Cabi)") {
+            ctx.beginPath();
+            ctx.strokeStyle="black";
+            ctx.strokeRect(200,180,60,40);         
+            ctx.fill();
+            ctx.stroke();
+          }else if(Gt03 == "持ち込み(Cabi)") {
+            ctx.beginPath();
+            ctx.strokeStyle="red";
+            ctx.strokeRect(200,180,60,40);
+            ctx.fillStyle = "white" ;
+            ctx.fill() ;
+            ctx.stroke();
+            ctx. textAlign = "center"
+          }else if (Gt03 == "持ち込みなし(Combo)") {
+            ctx.beginPath();
+            ctx.strokeStyle="black";
+            ctx.strokeRect(200,180,60,40);         
+            ctx.fill();
+            ctx.stroke();
+          }else if(Gt03 == "持ち込み(Combo)") {
+            ctx.beginPath();
+            ctx.strokeStyle="red";
+            ctx.strokeRect(200,180,60,40);
+            ctx.fillStyle = "white" ;
+            ctx.fill() ;
+            ctx.stroke();
+            ctx. textAlign = "center"
+          }
+          //キャビネット　名前入力、空欄の場合はHead
+          if (Gt22 == null) {
+            ctx.strokeText("Cabi",223,200);
+          }else{
+            ctx.strokeText(Gt22,223,200);
+          }
+
+///////////////////////////////////////////////////
+//          マイク設定(mypage.htmlより)　　　　   //
+//////////////////////////////////////////////////           
+let P1 = document.getElementsByName('P1');
+let P2 = document.getElementsByName('P2');
+let P3 = document.getElementsByName('P3');
+let P4 = document.getElementsByName('P4');
+let P5 = document.getElementsByName('P5');
+let P6 = document.getElementsByName('P6');
+let P7 = document.getElementsByName('P7');
+let P8 = document.getElementsByName('P8');
+let P9 = document.getElementsByName('P9');
+let P10 = document.getElementsByName('P10');
+console.log("Member1:"+P1[0].value);
+console.log("Member2:"+P2[0].value);
+console.log("Member3:"+P3[0].value);
+console.log("Member4:"+P4[0].value);
+console.log("Member5:"+P5[0].value);
+console.log("Member6:"+P6[0].value);
+console.log("Member7:"+P7[0].value);
+console.log("Member8:"+P8[0].value);
+console.log("Member9:"+P9[0].value);
+console.log("Member10:"+P10[0].value);
+
+//ギター２かつボーカルの場合
+if(P1="Vo/G2") {
+            //矢印軸          
+            /* 線を引く */
+            // 開始位置に移動する
+            ctx.moveTo(230,250);
+            // 線を引く
+            ctx.lineTo(230,300);
+            ctx.stroke();
+
+            //左側
+            /* 線を引く */
+            // 開始位置に移動する
+            ctx.moveTo(230,250);
+            // 線を引く
+            ctx.lineTo(220,265);
+            ctx.stroke();
+
+            //右側
+            /* 線を引く */
+            // 開始位置に移動する
+            ctx.moveTo(230,250);
+            // 線を引く
+            ctx.lineTo(240,265);
+            ctx.stroke();
+
+            //真ん中の丸
+            ctx.beginPath();
+            ctx.strokeStyle="black";  
+            ctx.arc(230, 275, 10, 0, Math.PI*2, false);
+            ctx.stroke();
+          
+            //表示(Vo/Gt2)
+            ctx.strokeText("Vo",230,310 );
+            ctx.stroke();
+          }
+//注意書き
+ctx.fillStyle="red";
+ctx.fillText("*赤は持ち込み機材",50,390);
+
+}
   draw();
 }

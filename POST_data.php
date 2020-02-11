@@ -1,4 +1,5 @@
 <?php
+ini_set('display_errors', 0);//画面推移時にエラーを表示させない
 //mypage.htmlをPOSTで受け取って値は表示されないままページに保管
 $datedata =$_POST['datedata'];
 $place =$_POST['place'];

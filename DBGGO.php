@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="mypage2.css">
+    <link rel="stylesheet" href="./css/mypage2.css">
     
     <title>Document</title>
 </head>
@@ -186,7 +186,7 @@
                         　　　<option>不要</option>
                          </select>
  
-                          <input name="Gt11" type="text" >
+                          <input name="Gt11" type="text" value="Marshall">
                      </td>
                      </tr>
                      <tr>
@@ -215,7 +215,7 @@
                         　    <option>持ち込み</option>
                         　　　<option>不要</option>
                          </select>
-                          <input name="Gt21" type="text" value="Jazz Chorus">
+                          <input name="Gt21" type="text" value="JC-120">
                      </td>
                      </tr>
                      <tr>
@@ -228,7 +228,7 @@
                         　    <option>持ち込み(Combo)</option>
                         　　　<option>不要</option>
                          </select>
-                          <input name="Gt22" type="text" value="Jazz Chorus">
+                          <input name="Gt22" type="text" value="JC-120">
                       </td>
                      </tr>
              </table>

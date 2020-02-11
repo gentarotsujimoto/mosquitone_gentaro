@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="sheet1.css">
+    <link rel="stylesheet" href="./css/sheet1.css">
     <title>Set Illustration</title>
 </head>
 <body>
@@ -24,11 +24,11 @@
             </h4>
         </div>
         <br>
-        <h5>Set Set Illustration:</h5>
+        <h5>Set:</h5>
         <div class="square">
-            <canvas>Not　Canvas</canvas>
+            <canvas>NotCanvas</canvas>
         <?php require('./POST_data.php');?>
-        <script src="DBGV.js"></script>
+        <script src="./js/DBGV.js"></script>
         </div>
         
     <br>
@@ -96,6 +96,8 @@
                     </tbody>
             </table>
     </div>
+    <center>1</center>
     </section>
+    <?php require('./clone2.php');?>
 </body>
 </html>

@@ -3,8 +3,8 @@
 {
   function draw() {
     const canvas = document.querySelector('canvas');
-    canvas.width="600"
-    canvas.height="600"    
+    canvas.width="589"
+    canvas.height="404"    
     if (typeof canvas.getContext === 'undefined') {
       return;
     }
@@ -12,7 +12,6 @@
 
 //ctx.fillRect(x, y, width, height);
 //DBGGO.phpのPOST処理はここから
-
 //////////////////////////////////////////////////////
 //              ドラムセッティング                   //
 //////////////////////////////////////////////////////
@@ -40,6 +39,7 @@ console.log("Kick:"+B1);
 console.log("Bass Drum:"+D5);
 console.log("China:"+D11);
 console.log("Splash:"+D12);
+function Drum_Top(){
 //バスドラム
 //持ち込みなし(if)
 //持ち込み(else if)
@@ -151,7 +151,9 @@ if (D5 == "持ち込みなし") {
           ctx.stroke(); 
           ctx. textAlign = "center"
         }
-
+        return
+      }
+ Drum_Top();
 //////////////////////////////////////////////////////
 //              ベースセッティング                   //
 //////////////////////////////////////////////////////
@@ -163,11 +165,12 @@ console.log("Bass Head:"+Ba01);
 console.log("Base Head Name:"+Ba1);
 console.log("Base Cabi,Combo:"+Ba02);
 console.log("Base Cabi,Combo Name:"+Ba2);
+
 //ベース（処理開始）
 //持ち込みなし(if)
 //持ち込み(else if)
 //不要の場合処理なし          
-
+function Bass_Top(){
 //ヘッド　持ち込みなし・持ち込み・不要
         if (Ba01 == "持ち込みなし") {
           BassHead("black",70,160,60,20);
@@ -193,7 +196,8 @@ console.log("Base Cabi,Combo Name:"+Ba2);
         }else{
           ctx.strokeText(Ba2,95,200);
         }
-
+      }
+Bass_Top();
 //////////////////////////////////////////////////////
 //              ギター１セッティング                 //
 //////////////////////////////////////////////////////
@@ -207,7 +211,7 @@ console.log("Guitar1 Cabi,Combo Name:"+Gt12);
 //持ち込みなし(if)
 //持ち込み(else if)
 //不要の場合処理なし
-
+function Guitar1_Top(){
 //ヘッド　持ち込みなし・持ち込み・不要
         if( Gt01 == "持ち込みなし(Combo)" || Gt01 == "持ち込み(Combo)") {
 	        console.log("Guitar1 Head:"+"なし");
@@ -249,7 +253,8 @@ console.log("Guitar1 Cabi,Combo Name:"+Gt12);
         }else{
           ctx.strokeText(Gt12,483,200);
         }
-	
+      }
+Guitar1_Top();	
 //////////////////////////////////////////////////////
 //              ギター２セッティング                 //
 //////////////////////////////////////////////////////
@@ -266,7 +271,7 @@ console.log("Guitar2 Cabi,Combo Name:"+Gt22);
 //持ち込みなし(if)
 //持ち込み(else if)
 //不要の場合処理なし
-
+function Guitar2_Top(){
 //ヘッド　持ち込みなし・持ち込み・不要
           if(Gt03 == "持ち込みなし(Combo)" || Gt03 == "持ち込み(Combo)") {
             console.log("Guitar1 Head:"+"なし");
@@ -309,7 +314,8 @@ console.log("Guitar2 Cabi,Combo Name:"+Gt22);
           }else{
             ctx.strokeText(Gt22,223,200);
           }
-
+        }
+Guitar2_Top();
 ///////////////////////////////////////////////////
 //          マイク設定(mypage.htmlより)　　　　   //
 //////////////////////////////////////////////////           
@@ -336,7 +342,7 @@ console.log("Member10:"+P10[0].value);
 
 //それぞれの値を配列に格納し、Pとする。
 var P = [P1[0].value,P2[0].value,P3[0].value,P4[0].value,P5[0].value,P6[0].value,P7[0].value,P8[0].value,P9[0].value,P10[0].value];
-
+function Vocal_Top(){
 //ギター２かつボーカルの場合
 if(P.includes("Vo/Gt2") == true) {
   microphone(230,250,230,300,230,250,220,265,230,250,240,265,230,275,230,310,null,null);
@@ -365,6 +371,8 @@ if(P.includes("Cho/Ba") == true){
 if(P.includes("Vo") == true){
   microphone(300,250,300,300,300,250,290,265,300,250,310,265,300,275,300,310,null,null);
 } 
+}
+Vocal_Top();
 
 //ドラム表示処理（丸）
 function Drum(O1,O2,O3,O4,O5,O6,Col){
@@ -475,7 +483,13 @@ function microphone(m1,m2,m3,m4,m5,m6,m7,m8,m9,m10,m11,m12,m13,m14,m15,m16,m17,m
             //表示(Cho/Gt2)
             ctx.strokeText("Cho",m17,m18 );
             ctx.stroke();
-}          
+}
+/*canvasデータを画像に変換にする関数
+function chgImg()
+{
+  var png = ctx.toDataURL();
+  document.getElementById("newImg").src = png;
+}*/
 //注意書き
 ctx.fillStyle="red";
 ctx.fillText("*赤は持ち込み機材",50,390);

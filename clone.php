@@ -5,10 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/sheet1.css">
+    <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
     <title>Set Illustration</title>
 </head>
 <body>
-    <section class="sheet">
+<button id="DI" style="position: absolute; right: 100px; top: 30px; background-color: #000000; color: #fff; width: 200px; height: 40px;">DI</button>
+<button style="position: absolute; right: 100px; top: 70px; background-color: #000000; color: #fff; width: 200px; height: 40px;">microphone</button>
+<input type="button" value="Printout PDF" style="position: absolute; right: 100px; top: 190px; background-color: #000000; color: #fff; width: 200px; height: 40px;"/>
+<input type="button" value="Volum Set" style="position: absolute; right: 100px; top: 230px; background-color: #000000; color: #fff; width: 200px; height: 40px;"/>
+<script>
+            $("#DI").click(function(){
+                $("#DI_input").append('<img class="DI_out" src="./png/DI.png" cmanOMat="movearea">');
+                cmanOM_JS_init();
+            });
+</script>
+
+<section class="sheet">
         <h1 class="text-left">Band Name:
             <a1><?php print("".$_POST["BandName"]);?></a1>
         </h1>
@@ -26,11 +38,13 @@
         <br>
         <h5>Set:</h5>
         <div class="square">
-            <canvas>NotCanvas</canvas>
-        <?php require('./POST_data.php');?>
-        <script src="./js/DBGV.js"></script>
+        <script id="move" src="./js/cmanObjMove_v091.js" charset="utf-8"></script>
+        <div id="DI_input">
         </div>
-        
+        <canvas>NotCanvas</canvas>
+        <?php require('./POST_data.php');?>
+        <script id="png" src="./js/DBGV.js"></script>
+        </div>
     <br>
         <h6>Member:</h6>
     <div class="row_5">

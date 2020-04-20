@@ -101,9 +101,15 @@ div.row_6 {
 }
 /*図形入力用の枠*/
 .square {
+    position: relative;
     width: 585px;
     height: 400px;
     border: solid;
+ }
+ .square #DI_input{
+  position: absolute;
+  top: 0;
+  left: 0;
  }
 
 /* 個別のスタイル指定 */

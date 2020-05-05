@@ -111,6 +111,11 @@ div.row_6 {
   top: 0;
   left: 0;
  }
+ .square #microphone_input{
+  position: absolute;
+  top: 0;
+  left: 0;
+ }
 
 /* 個別のスタイル指定 */
 

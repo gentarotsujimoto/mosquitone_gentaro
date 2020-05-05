@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 <body>
-        <form action="clone.php" method="post">
+        <form action="./clone.php" method="post">
         <section class="sheet">
                 <center>
                         <h1><font size="10" style="color:orange"> <div1 >mosquitone</div1></font></h1>
